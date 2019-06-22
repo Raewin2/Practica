@@ -1,18 +1,12 @@
-import java.util.Scanner;
-
 public class sentencia_control
 {
     public static void main(String args[] )
     {
-        
-                Scanner in = new Scanner(System.in);
-        //String s = in.nextLine();
-        //System.out.println("You entered string "+s);
-        int a = in.nextInt();
-       // System.out.println("You entered integer "+a);
-        //float b = in.nextFloat();
-        //System.out.println("You entered float "+b);
-        ConvertirAPalabra(a);
+        int i = 1;
+        while(i <= 10 && i >0) {
+            ConvertirAPalabra(i);
+            i = i + 1;
+        }
 
     }
     private static void ConvertirAPalabra(int a) {
