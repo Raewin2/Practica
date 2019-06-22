@@ -1,14 +1,10 @@
 public class sentencia_control
 {
     public static void main(String args[] )
-    {
-        int i = 1;
-        
-        do {
+    {        
+        for(int i = 1;i <= 10 && i >0;i++) {
             ConvertirAPalabra(i);
-            i = i + 1;
-        } while(i <= 10 && i >0);
-
+        }
     }
     private static void ConvertirAPalabra(int a) {
         switch (a) {
