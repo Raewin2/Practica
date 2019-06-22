@@ -3,10 +3,11 @@ public class sentencia_control
     public static void main(String args[] )
     {
         int i = 1;
-        while(i <= 10 && i >0) {
+        
+        do {
             ConvertirAPalabra(i);
             i = i + 1;
-        }
+        } while(i <= 10 && i >0);
 
     }
     private static void ConvertirAPalabra(int a) {
