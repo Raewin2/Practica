@@ -16,29 +16,42 @@ public class sentencia_control
 
     }
     private static void ConvertirAPalabra(int a) {
-        if (a==1){
-            imprimir("Uno");
-        } else if (a==2){
-            imprimir("Dos");
-        }else if (a==3){
-            imprimir("Tres");
-        }else if(a==4){
-            imprimir("Cuatro");
-        }else if(a==5){
-            imprimir("Cinco");
-        }else if(a==6){
-            imprimir("Seis");
-        }else if(a==7){
-            imprimir("Siete");
-        }else if (a==8){
-            imprimir("Ocho");
-        }else if (a==9){
-            imprimir("Nueve");
-        }else if(a==10){
-            imprimir("Diez");
-        } else { 
-            imprimir("Numero fuera de rango");
+        switch (a) {
+            case 1:
+                imprimir("Uno");
+                break;
+            case 2:
+                imprimir("Dos");
+                break;
+            case 3:
+                imprimir("Tres");
+                break;
+             case 4:
+                imprimir("Cuatro");
+                break; 
+            case 5:
+                imprimir("Cinco");
+                break;
+            case 6:
+                imprimir("Seis");
+                break;   
+            case 7:
+                imprimir("Siete");
+                break;
+            case 8:
+                imprimir("Ocho");
+                break;
+            case 9:
+                imprimir("Nueve");
+                break;
+            case 10:
+                imprimir("Diez");
+                break;
+            default:
+                imprimir("Numero fuera de rango");
+                break;
         }
+       
     }
     private static void imprimir(int a) {
             System.out.println (a);
